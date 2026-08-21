@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Workshop Signup</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <p class="eyebrow">Local workshop</p>
+      <h1>Workshop Signup</h1>
+      <p class="lead">Fill the form to reserve a seat.</p>
+
+      <form id="signup-form" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          Ticket
+          <select name="ticket">
+            <option value="in-person">In person</option>
+            <option value="online">Online</option>
+          </select>
+        </label>
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+
+      <p id="status" class="status" hidden></p>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
